@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:gravity="center_horizontal">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/main_app_logo"
+                    app:civ_border_width="5dp"
+                    app:civ_border_color="@color/main_blue"/>
+
+                <EditText
+                    android:id="@+id/email_log_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_bg_radius"
+                    android:hint="Email"
+                    android:padding="15dp"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="15dp"
+                    android:textColorHint="@color/white1"
+                    android:layout_marginTop="55dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/et_bg_radius">
+
+
+                    <EditText
+                        android:id="@+id/psd_log_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/see_all_tv"
+                        android:background="@android:color/transparent"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:padding="15dp"
+                        android:paddingStart="25dp"
+                        android:paddingEnd="15dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white1" />
+
+                    <TextView
+                        android:id="@+id/see_all_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="25dp"
+                        android:text="Forgot"
+                        android:textColor="@color/main_blue"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/login_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_radius_corner_bg"
+                    android:text="Login"
+                    android:layout_marginTop="35dp"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:padding="15dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
